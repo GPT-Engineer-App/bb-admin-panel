@@ -69,36 +69,40 @@ const Index = () => {
             <Text>Pagamento: R$ 500,00</Text>
           </Box>
         </Flex>
-        <Box bg="white" borderRadius="md" boxShadow="md" p={6}>
+        <Box bg="white" borderRadius="md" boxShadow="md" p={6} mb={8}>
           <Heading size="md" mb={4}>
-            Atividades Recentes
+            Dashboard
           </Heading>
           {}
+          <Flex>
+            <Box flex={1} bg="brand.700" borderRadius="md" p={4} mr={4}>
+              <Heading size="sm" mb={2} color="white">
+                Total Revenue
+              </Heading>
+              <Text fontSize="xl" fontWeight="bold" color="white">
+                $10,500
+              </Text>
+            </Box>
+            <Box flex={1} bg="brand.700" borderRadius="md" p={4}>
+              <Heading size="sm" mb={2} color="white">
+                New Users
+              </Heading>
+              <Text fontSize="xl" fontWeight="bold" color="white">
+                150
+              </Text>
+            </Box>
+          </Flex>
         </Box>
-        <Flex align="center" mb={8}>
-          <Image src="https://www.unilab.edu.br/wp-content/uploads/2013/02/Banco-do-Brasil-logo.jpg" alt="Banco do Brasil Logo" h="50px" mr={4} />
-          <Heading size="lg">Bem-vindo ao Painel de Administração</Heading>
-        </Flex>
-        <Text fontSize="xl" mb={8}>
-          Gerencie suas finanças, visualize relatórios e muito mais.
-        </Text>
-        <Flex>
-          <Box bg="brand.800" borderRadius="md" boxShadow="md" p={6} mr={8}>
-            <Heading size="md" mb={4}>
-              Saldo Atual
-            </Heading>
-            <Text fontSize="2xl" fontWeight="bold">
-              R$ 10.500,00
-            </Text>
-          </Box>
-          <Box bg="brand.800" borderRadius="md" boxShadow="md" p={6}>
-            <Heading size="md" mb={4}>
-              Últimas Transações
-            </Heading>
-            <Text>Depósito: R$ 1.000,00</Text>
-            <Text>Pagamento: R$ 500,00</Text>
-          </Box>
-        </Flex>
+
+        <Heading size="lg" mb={4}>
+          Recent Activity
+        </Heading>
+        <Box bg="white" borderRadius="md" boxShadow="md" p={6}>
+          {}
+          <Text>Activity 1</Text>
+          <Text>Activity 2</Text>
+          <Text>Activity 3</Text>
+        </Box>
       </Box>
     </Flex>
   );
