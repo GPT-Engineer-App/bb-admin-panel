@@ -77,15 +77,15 @@ const Index = () => {
           <Flex>
             <Box flex={1} bg="brand.700" borderRadius="md" p={4} mr={4}>
               <Heading size="sm" mb={2} color="white">
-                Total Revenue
+                Receita Total
               </Heading>
               <Text fontSize="xl" fontWeight="bold" color="white">
-                $10,500
+                R$ 10.500
               </Text>
             </Box>
             <Box flex={1} bg="brand.700" borderRadius="md" p={4}>
               <Heading size="sm" mb={2} color="white">
-                New Users
+                Novos Usuários
               </Heading>
               <Text fontSize="xl" fontWeight="bold" color="white">
                 150
@@ -95,13 +95,13 @@ const Index = () => {
         </Box>
 
         <Heading size="lg" mb={4}>
-          Recent Activity
+          Atividades Recentes
         </Heading>
         <Box bg="white" borderRadius="md" boxShadow="md" p={6}>
           {}
-          <Text>Activity 1</Text>
-          <Text>Activity 2</Text>
-          <Text>Activity 3</Text>
+          <Text>Atividade 1</Text>
+          <Text>Atividade 2</Text>
+          <Text>Atividade 3</Text>
         </Box>
       </Box>
     </Flex>
