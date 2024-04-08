@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Heading, Text, Button, Image, Stack, Icon, Divider } from "@chakra-ui/react";
-import { FaHome, FaChartBar, FaExchangeAlt, FaCog, FaSignOutAlt } from "react-icons/fa";
+import { FaHome, FaChartBar, FaExchangeAlt, FaCog, FaSignOutAlt, FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -99,9 +99,24 @@ const Index = () => {
         </Heading>
         <Box bg="white" borderRadius="md" boxShadow="md" p={6}>
           {}
-          <Text>Atividade 1</Text>
-          <Text>Atividade 2</Text>
-          <Text>Atividade 3</Text>
+          <Box borderBottomWidth={1} borderBottomColor="gray.200" py={4}>
+            <Flex align="center">
+              <Icon as={FaCheck} color="green.500" mr={2} />
+              <Text>Atividade 1</Text>
+            </Flex>
+          </Box>
+          <Box borderBottomWidth={1} borderBottomColor="gray.200" py={4}>
+            <Flex align="center">
+              <Icon as={FaCheck} color="green.500" mr={2} />
+              <Text>Atividade 2</Text>
+            </Flex>
+          </Box>
+          <Box py={4}>
+            <Flex align="center">
+              <Icon as={FaCheck} color="green.500" mr={2} />
+              <Text>Atividade 3</Text>
+            </Flex>
+          </Box>
         </Box>
       </Box>
     </Flex>
