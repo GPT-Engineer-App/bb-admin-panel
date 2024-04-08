@@ -13,28 +13,28 @@ const Index = () => {
         </Heading>
         <Stack spacing={6}>
           <Link to="/">
-            <Button leftIcon={<Icon as={FaHome} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+            <Button leftIcon={<Icon as={FaHome} />} variant="ghost" justifyContent="flex-start" color="white" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
               Início
             </Button>
           </Link>
           <Link to="/reports">
-            <Button leftIcon={<Icon as={FaChartBar} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+            <Button leftIcon={<Icon as={FaChartBar} />} variant="ghost" justifyContent="flex-start" color="white" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
               Relatórios
             </Button>
           </Link>
           <Link to="/transactions">
-            <Button leftIcon={<Icon as={FaExchangeAlt} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+            <Button leftIcon={<Icon as={FaExchangeAlt} />} variant="ghost" justifyContent="flex-start" color="white" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
               Transações
             </Button>
           </Link>
           <Link to="/settings">
-            <Button leftIcon={<Icon as={FaCog} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+            <Button leftIcon={<Icon as={FaCog} />} variant="ghost" justifyContent="flex-start" color="white" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
               Configurações
             </Button>
           </Link>
         </Stack>
         <Divider my={8} borderColor="whiteAlpha.400" />
-        <Button leftIcon={<Icon as={FaSignOutAlt} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+        <Button leftIcon={<Icon as={FaSignOutAlt} />} variant="ghost" justifyContent="flex-start" color="white" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
           Sair
         </Button>
       </Box>
