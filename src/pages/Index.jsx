@@ -33,7 +33,7 @@ const Index = () => {
       {/* Main Content */}
       <Box flex={1} p={8} bg="white">
         <Flex align="center" mb={8}>
-          <Image src="https://logodownload.org/wp-content/uploads/2014/02/banco-do-brasil-logo-1.png" alt="Banco do Brasil Logo" h="50px" mr={4} />
+          <Image src="https://www.unilab.edu.br/wp-content/uploads/2013/02/Banco-do-Brasil-logo.jpg" alt="Banco do Brasil Logo" h="50px" mr={4} />
           <Heading size="lg">Bem-vindo ao Painel de Administração</Heading>
         </Flex>
         <Text fontSize="xl" mb={8}>
