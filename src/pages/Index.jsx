@@ -33,7 +33,7 @@ const Index = () => {
       {/* Main Content */}
       <Box flex={1} p={8}>
         <Flex align="center" mb={8}>
-          <Image src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxiYW5jbyUyMGRvJTIwYnJhc2lsJTIwbG9nb3xlbnwwfHx8fDE3MTI2MTQwODN8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Logo" h="50px" mr={4} />
+          <Image src="https://logodownload.org/wp-content/uploads/2014/02/banco-do-brasil-logo-1.png" alt="Banco do Brasil Logo" h="50px" mr={4} />
           <Heading size="lg">Bem-vindo ao Painel de Administração</Heading>
         </Flex>
         <Text fontSize="xl" mb={8}>
