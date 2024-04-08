@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, Text, Button, Image, Stack, Icon, Divider } from "@chakra-ui/react";
 import { FaHome, FaChartBar, FaExchangeAlt, FaCog, FaSignOutAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -11,18 +12,26 @@ const Index = () => {
           Painel de Administração
         </Heading>
         <Stack spacing={6}>
-          <Button leftIcon={<Icon as={FaHome} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
-            Início
-          </Button>
-          <Button leftIcon={<Icon as={FaChartBar} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
-            Relatórios
-          </Button>
-          <Button leftIcon={<Icon as={FaExchangeAlt} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
-            Transações
-          </Button>
-          <Button leftIcon={<Icon as={FaCog} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
-            Configurações
-          </Button>
+          <Link to="/">
+            <Button leftIcon={<Icon as={FaHome} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+              Início
+            </Button>
+          </Link>
+          <Link to="/reports">
+            <Button leftIcon={<Icon as={FaChartBar} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+              Relatórios
+            </Button>
+          </Link>
+          <Link to="/transactions">
+            <Button leftIcon={<Icon as={FaExchangeAlt} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+              Transações
+            </Button>
+          </Link>
+          <Link to="/settings">
+            <Button leftIcon={<Icon as={FaCog} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
+              Configurações
+            </Button>
+          </Link>
         </Stack>
         <Divider my={8} borderColor="whiteAlpha.400" />
         <Button leftIcon={<Icon as={FaSignOutAlt} />} variant="ghost" justifyContent="flex-start" _hover={{ bg: "brand.800" }} _active={{ bg: "brand.900" }}>
@@ -30,8 +39,7 @@ const Index = () => {
         </Button>
       </Box>
 
-      {/* Main Content */}
-      <Box flex={1} p={8}>
+      <Box flex={1} p={8} overflowY="scroll">
         <Flex justify="space-between" align="center" mb={8}>
           <Flex align="center">
             <Image src="https://www.unilab.edu.br/wp-content/uploads/2013/02/Banco-do-Brasil-logo.jpg" alt="Banco do Brasil Logo" h="50px" mr={4} />
